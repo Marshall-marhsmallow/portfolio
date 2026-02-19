@@ -59,11 +59,8 @@ a{
     align-self: center;
     justify-self: center;
 }
-#aboutex{
-    display: flex;
-    flex-direction: column;
-    width:40rem;
-    align-self: center;
+#hero{
+    gap:3rem;
     justify-self: center;
     align-items: center;
     margin-top:10rem;
