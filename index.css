@@ -1,38 +1,75 @@
-nav {
-    display:flex;
-    flex-wrap:wrap;
-    justify-self:center ;
+body{
+    display: flex;
+    flex-direction: column;
+}
+#navigation {
+    display: flex;
+    align-self: center;
 }
 nav ul{
-    list-style: none;
     display: flex;
     gap:1rem;
-    align-items: center;
-}
-a {
-    text-decoration: none;
-    color:black;
-    font-weight: 700;
-}
-nav img{
-    width:35px;
-    height:35px;
-    border-radius: 1rem;
+    list-style: none;
     align-self: center;
-    margin:0 1rem 0 0;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 #hero{
     display: flex;
-    gap:3rem;
+    align-self: center;
+    height: 98lvh;
+    align-items: center;
+}
+#herotxt p{
+    font-size: 20px;
+    color: grey;
+    margin:0.3rem;
+}
+#herotxt h2{
+    font-size: 70px;
+    margin: 0;
+}
+#herotxt h2 span:first-child{
+    color:orange;
+}
+#herotxt h2 span:last-child{
+    padding-left: 8rem;
+}
+#herosoc{
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+    padding:1rem 0 0 0;
+}
+#hero ul{
+    display: flex;
+    gap:1rem;
+    list-style: none;
+}
+#aboutme{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+#abouttxt{
+    width:40rem;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+}
+#aboutex{
+    display: flex;
+    flex-direction: column;
+    width:40rem;
+    align-self: center;
     justify-self: center;
     align-items: center;
-    height:calc(100vh - 100px) ;
+    margin-top:10rem;
 }
-#heroimg img{
-    border-radius:50%;
-}
-#heroimg{
- border-radius: 50%;
- border:0.3rem solid ;
- background-color:linear-gardient(180deg, blue, white) ;
+#aboutex p{
+    font-weight:900 ;
+    border:2px solid orange;
+    padding:0.5rem;
 }
