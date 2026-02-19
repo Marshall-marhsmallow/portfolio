@@ -116,9 +116,22 @@ a {
     width: 23rem;
     height: 30rem;
     align-items: center;
+    border-radius: 2rem;
+    box-shadow:15px 15px 9px black;
+    justify-content: center;
 }
-img{
+.imgcont img{
     width:20rem;
     height: 20rem;
     object-fit: fill;
+    border-radius: 1rem;
+}
+.projectbutton{
+    border:2px solid black;
+    border-radius:1rem;
+    padding:0.5rem;
+}
+.linkscont{
+    display: flex;
+    gap:2rem;
 }
