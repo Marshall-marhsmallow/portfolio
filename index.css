@@ -1,72 +1,124 @@
-body{
+body {
     display: flex;
     flex-direction: column;
 }
+
 #navigation {
     display: flex;
     align-self: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     list-style: none;
     align-self: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-#hero{
+
+#hero {
+    gap: 3rem;
+    justify-self: center;
+    margin-top: 10rem;
     display: flex;
     align-self: center;
     height: 98lvh;
     align-items: center;
 }
-#herotxt p{
+
+#herotxt p {
     font-size: 20px;
     color: grey;
-    margin:0.3rem;
+    margin: 0.3rem;
 }
-#herotxt h2{
+
+#herotxt h2 {
     font-size: 70px;
     margin: 0;
 }
-#herotxt h2 span:first-child{
-    color:orange;
+
+#herotxt h2 span:first-child {
+    color: orange;
 }
-#herotxt h2 span:last-child{
-    padding-left: 8rem;
+
+#herotxt h2 span:last-child {
+    padding-left: 10rem;
 }
-#herosoc{
+
+#herosoc {
     display: flex;
     justify-content: center;
-    gap:1.5rem;
-    padding:1rem 0 0 0;
+    gap: 1.5rem;
+    padding: 1rem 0 0 0;
 }
-#hero ul{
+
+#hero ul {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     list-style: none;
 }
-#aboutme{
-    display: flex;
-    flex-wrap:wrap;
 
+#contacticons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
-#abouttxt{
-    width:40rem;
+
+#aboutme {
+    margin:3rem 0 0 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sectionheader {
+    font-size: 80px;
+    margin: 3rem 0 0 3rem;
+}
+
+#abouttxt {
+    width: 40rem;
     height: fit-content;
     align-self: center;
     justify-self: center;
 }
-#hero{
-    gap:3rem;
-    justify-self: center;
-    align-items: center;
-    margin-top:10rem;
+
+#aboutex {
+    margin: 2rem 0 0 2rem;
 }
-#aboutex p{
-    font-weight:900 ;
-    border:2px solid orange;
-    padding:0.5rem;
+
+#aboutex p {
+    font-weight: 900;
+    border: 2px solid orange;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#aboutex p:hover {
+    background-color: orange;
+}
+
+#projects {
+    width:100%;
+    margin:3rem 0 0 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.projectcard{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    height: 30rem;
+    align-items: center;
+}
+img{
+    width:20rem;
+    height: 20rem;
+    object-fit: fill;
 }
