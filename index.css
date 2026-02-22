@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: "Playfair Display", serif;
 }
 
 #navigation {
@@ -8,7 +9,7 @@ body {
     align-self: center;
 }
 
-nav ul {
+#navlist {
     display: flex;
     gap: 1rem;
     list-style: none;
@@ -21,46 +22,36 @@ a {
 }
 
 #hero {
-    gap: 3rem;
-    justify-self: center;
     margin-top: 10rem;
-    display: flex;
-    align-self: center;
     height: 98lvh;
     align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
 }
 
-#herotxt p {
-    font-size: 20px;
+
+#hero p {
+    font-size: 1.5rem;
     color: grey;
     margin: 0.3rem;
 }
 
-#herotxt h2 {
-    font-size: 70px;
+#name {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
     margin: 0;
 }
 
-#herotxt h2 span:first-child {
+#name span:first-child {
     color: orange;
 }
 
-#herotxt h2 span:last-child {
+#name span:last-child {
     padding-left: 10rem;
 }
 
-#herosoc {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem 0 0 0;
-}
-
-#hero ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-}
 
 #contacticons {
     display: flex;
@@ -81,24 +72,26 @@ a {
 }
 
 #abouttxt {
-    width: 40rem;
+    width: 59rem;
     height: fit-content;
     align-self: center;
     justify-self: center;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #aboutex {
     margin: 2rem 0 0 2rem;
 }
 
-#aboutex p {
+.ex {
     font-weight: 900;
     border: 2px solid orange;
     padding: 0.5rem;
     border-radius: 1rem;
 }
 
-#aboutex p:hover {
+.ex:hover {
     background-color: orange;
 }
 
@@ -117,7 +110,7 @@ a {
     height: 30rem;
     align-items: center;
     border-radius: 2rem;
-    box-shadow:15px 15px 9px black;
+    box-shadow: 2px 2px 2px black;
     justify-content: center;
 }
 .imgcont img{
@@ -129,9 +122,38 @@ a {
 .projectbutton{
     border:2px solid black;
     border-radius:1rem;
-    padding:0.5rem;
+    padding:0.2rem 1rem 0.2rem 1rem;
+    font-weight:700;
+}
+.projectbutton:hover {
+    background-color: orange;
 }
 .linkscont{
     display: flex;
     gap:2rem;
+}
+#contactme {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: center;
+    text-align:center;
+    margin:3rem 0 0 0;
+}
+#contactme h3{
+    font-size: 30px;
+}
+#contactme p,a{
+    font-size: 20px;
+}
+@media (max-width:580px){
+ #name {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+#name span:last-child {
+    padding-left: 0rem;
+}
 }
