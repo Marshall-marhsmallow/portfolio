@@ -22,11 +22,10 @@ a {
 }
 
 #hero {
-    margin-top: 10rem;
     height: 98lvh;
     align-items: center;
     justify-content: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -35,6 +34,7 @@ a {
     font-size: 1.5rem;
     color: grey;
     margin: 0.3rem;
+    color: #c74949;
 }
 
 #name {
@@ -60,15 +60,19 @@ a {
 }
 
 #aboutme {
-    margin:3rem 0 0 0 ;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    height: 100vh;
 }
 
 #sectionheader {
     font-size: 80px;
     margin: 3rem 0 0 3rem;
+}
+
+#aboutme :nth-child(2) {
+    display: flex;
+    justify-content: center;
 }
 
 #abouttxt {
@@ -81,10 +85,12 @@ a {
 }
 
 #aboutex {
+    flex-direction: column;
     margin: 2rem 0 0 2rem;
 }
 
 .ex {
+    text-align: center;
     font-weight: 900;
     border: 2px solid orange;
     padding: 0.5rem;
@@ -96,14 +102,23 @@ a {
 }
 
 #projects {
-    width:100%;
-    margin:3rem 0 0 0 ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
+    height: 100vh;
+    width: 100%;
+
 }
-.projectcard{
+
+#project-cards {
+    height: 90%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap;
+
+}
+
+.projectcard {
     display: flex;
     flex-direction: column;
     width: 23rem;
@@ -113,47 +128,61 @@ a {
     box-shadow: 2px 2px 2px black;
     justify-content: center;
 }
-.imgcont img{
-    width:20rem;
+
+.imgcont img {
+    width: 20rem;
     height: 20rem;
     object-fit: fill;
     border-radius: 1rem;
 }
-.projectbutton{
-    border:2px solid black;
-    border-radius:1rem;
-    padding:0.2rem 1rem 0.2rem 1rem;
-    font-weight:700;
+
+.projectbutton {
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-weight: 700;
 }
+
 .projectbutton:hover {
     background-color: orange;
 }
-.linkscont{
+
+.linkscont {
     display: flex;
-    gap:2rem;
+    gap: 2rem;
 }
+
 #contactme {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height:100vh;
-    justify-content: center;
-    text-align:center;
-    margin:3rem 0 0 0;
+
 }
-#contactme h3{
+
+#contactme-txt {
+    height: 90%;
+    align-content: center;
+    align-self: center;
+}
+
+#contactme h3 {
     font-size: 30px;
+
 }
-#contactme p,a{
+
+#contactme p,
+a {
     font-size: 20px;
 }
-@media (max-width:580px){
- #name {
-    font-size: 3rem;
-    margin: 0;
-}
+
+@media (max-width:580px) {
+    #name {
+        font-size: 3rem;
+        margin: 0;
+    }
 
 
-#name span:last-child {
-    padding-left: 0rem;
-}
+    #name span:last-child {
+        padding-left: 0rem;
+    }
 }
