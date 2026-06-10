@@ -28,4 +28,19 @@ if (savedPos) {
 
 // Rest of your code (smooth scroll, cursor, etc.)
 const navbar = document.getElementById("navigation");
-navbar.style.display = "none"
+const trigger = document.getElementById("heronavlist");
+const obsorver = new IntersectionObserver ((entries) =>{
+    console.log("observer working");
+    entries.forEach(entry =>{
+        if (!entry.isIntersecting){
+            navbar.classList.add("visible");
+            navbar.classList.remove("hidden");
+        }
+        if (entry.isIntersecting)
+            {
+                navbar.classList.remove("visible");
+                navbar.classList.add("hidden");
+            }
+    })
+})
+obsorver.observe(trigger);
