@@ -133,12 +133,9 @@ a {
 }
 
 #project-cards {
-    height: 90%;
     display: flex;
     gap: 3rem;
     justify-content: center;
-    justify-self: center;
-    align-self: center;
     flex-wrap: wrap;
 
 }
@@ -159,8 +156,12 @@ a {
     height: 30rem;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 5px 5px silver;
     justify-content: center;
+}
+
+.projectcard h3 {
+    text-align: center;
 }
 
 .imgcont img {
