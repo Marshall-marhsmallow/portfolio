@@ -83,6 +83,7 @@ a {
 }
 
 #aboutme {
+    margin:3rem 0 0 0 ;
     justify-content: center;
     align-content: center;
     height: 100vh;
@@ -143,6 +144,15 @@ a {
 }
 
 .projectcard {
+    width:100%;
+    margin:3rem 0 0 0 ;
+
+    gap: 3rem;
+}
+#project :nth-child(2){
+    display: flex;
+}
+.projectcard{
     display: flex;
     flex-direction: column;
     width: 23rem;
