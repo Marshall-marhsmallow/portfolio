@@ -82,16 +82,12 @@ a {
     gap: 1rem;
 }
 
-#aboutme {
-    margin:3rem 0 0 0 ;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-}
 
-#sectionheader {
+.sectionheader {
     font-size: 80px;
     margin: 3rem 0 0 3rem;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
 #aboutme :nth-child(2) {
@@ -125,11 +121,26 @@ a {
     background-color: orange;
     cursor:default;
 }
-
-#projects {
+/*
+#contactme {
     height: 100vh;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 
+}
+#aboutme {
+    margin:3rem 0 0 0 ;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}*/
+.main-sec {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    margin:3rem 0 0 0 ;
+    justify-content: center;
+    align-content: center;
 }
 
 #project-cards {
@@ -137,6 +148,7 @@ a {
     gap: 3rem;
     justify-content: center;
     flex-wrap: wrap;
+    padding:2rem 0 0 0;
 
 }
 
@@ -182,12 +194,6 @@ a {
     gap: 2rem;
 }
 
-#contactme {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-}
 
 #contactme-txt {
     height: 90%;
@@ -210,8 +216,6 @@ a {
         font-size: 3rem;
         margin: 0;
     }
-
-
     #name span:last-child {
         padding-left: 0rem;
     }
