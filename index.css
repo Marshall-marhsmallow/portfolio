@@ -1,37 +1,51 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     display: flex;
     flex-direction: column;
     font-family: "Playfair Display", serif;
+    margin: 0;
 }
 
 #navigation {
+    background-image: linear-gradient(to right, white, beige);
     display: flex;
-    justify-content: center;
     position: fixed;
     background-color: white;
     width: 90%;
     align-self: center;
+    justify-content: center;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px black;
 }
-.hidden{
+
+#navigation img {
+    height: 50px;
+    width: 50px;
+    border-radius: 40rem;
+    align-self: center;
+}
+
+.hidden {
     opacity: 0;
     transform: translateY(-20px);
 }
-.visible{
+
+.visible {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 #navlist {
     display: flex;
     gap: 1rem;
     list-style: none;
     align-self: center;
 }
+
 #heronavlist {
     display: flex;
     gap: 1rem;
@@ -45,6 +59,7 @@ a {
 }
 
 #hero {
+    background-image: linear-gradient(to top, white, beige);
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -52,6 +67,11 @@ a {
     flex-direction: column;
 }
 
+#hero img {
+    border-radius: 20rem;
+    height: 200px;
+    width: 200px;
+}
 
 #hero p {
     font-size: 1.5rem;
@@ -94,16 +114,20 @@ a {
     display: flex;
     justify-content: center;
 }
-
+#aboutme{
+        background-image: linear-gradient(to bottom, white, beige);
+}
 #abouttxt {
-    width: 59rem;
+    max-width: 59rem;
     height: fit-content;
     align-self: center;
     justify-self: center;
     font-weight: 500;
     font-size: 20px;
 }
-
+#abouttxt{
+    line-height:2;
+}
 #aboutex {
     flex-direction: column;
     margin: 2rem 0 0 2rem;
@@ -112,35 +136,25 @@ a {
 .ex {
     text-align: center;
     font-weight: 900;
-    border: 2px solid orange;
+    border: 2px solid #ffc889;
     padding: 0.5rem;
     border-radius: 1rem;
 }
 
 .ex:hover {
-    background-color: orange;
-    cursor:default;
+    background-color: #ffc889;
+    cursor: default;
 }
-/*
-#contactme {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 
-}
-#aboutme {
-    margin:3rem 0 0 0 ;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-}*/
 .main-sec {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    margin:3rem 0 0 0 ;
     justify-content: center;
     align-content: center;
+}
+#projects{
+        background-image: linear-gradient(to top, white, beige);
 }
 
 #project-cards {
@@ -148,15 +162,15 @@ a {
     gap: 3rem;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem 0 0 0;
+    padding: 2rem 0 0 0;
 
 }
 
-#project :nth-child(2){
+#project :nth-child(2) {
     display: flex;
 }
 
-.projectcard{
+.projectcard {
     display: flex;
     flex-direction: column;
     width: 23rem;
@@ -179,26 +193,29 @@ a {
 }
 
 .projectbutton {
-    border: 2px solid black;
+    border: 2px solid #ffc889;
     border-radius: 1rem;
     padding: 0.2rem 1rem 0.2rem 1rem;
     font-weight: 700;
 }
 
 .projectbutton:hover {
-    background-color: orange;
+    background-color: #ffc889;
 }
 
 .linkscont {
     display: flex;
     gap: 2rem;
 }
-
+#contactme{
+        background-image: linear-gradient(to bottom, white, beige);
+}
 
 #contactme-txt {
+    display: flex;
+    flex-direction: column;
     height: 90%;
-    align-content: center;
-    align-self: center;
+    align-items: center;
 }
 
 #contactme h3 {
@@ -206,8 +223,7 @@ a {
 
 }
 
-#contactme p,
-a {
+#contactme a {
     font-size: 20px;
 }
 
@@ -216,7 +232,14 @@ a {
         font-size: 3rem;
         margin: 0;
     }
+
     #name span:last-child {
         padding-left: 0rem;
+    }
+}
+
+@media (max-width:1300px) {
+    #aboutme :nth-child(2) {
+        flex-wrap: wrap;
     }
 }
