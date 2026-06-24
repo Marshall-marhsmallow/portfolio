@@ -1,5 +1,3 @@
-console.log("Script loaded!");
-
 // Save scroll position
 window.addEventListener('beforeunload', () => {
     sessionStorage.setItem('scrollPos', window.scrollY);
@@ -30,7 +28,6 @@ if (savedPos) {
 const navbar = document.getElementById("navigation");
 const trigger = document.getElementById("heronavlist");
 const obsorver = new IntersectionObserver ((entries) =>{
-    console.log("observer working");
     entries.forEach(entry =>{
         if (!entry.isIntersecting){
             navbar.classList.add("visible");
