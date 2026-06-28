@@ -3,24 +3,36 @@ html {
 }
 
 body {
+    font-family: "Playfair";
     display: flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif;
     margin: 0;
 }
 
 #navigation {
     background-image: linear-gradient(to right, white, beige);
-    display: flex;
+    display: grid;
     position: fixed;
     background-color: white;
     width: 90%;
     align-self: center;
-    justify-content: center;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px black;
+    grid-template-columns: 15% auto;
 }
 
+#bannertxt {
+    align-self: left;
+    justify-self: center;
+    font-size: 1.2rem;
+    font-style: none;
+    font-family: "Rock Salt";
+    font-weight: 900;
+    background:linear-gradient(to right,  #e8722a,#f9c89a, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 .hidden {
     opacity: 0;
@@ -35,6 +47,7 @@ body {
 
 #navlist {
     display: flex;
+    justify-self: center;
     gap: 1rem;
     list-style: none;
     align-self: center;
@@ -103,9 +116,11 @@ a {
     display: flex;
     justify-content: center;
 }
-#aboutme{
-        background-image: linear-gradient(to bottom, white, beige);
+
+#aboutme {
+    background-image: linear-gradient(to bottom, white, beige);
 }
+
 #abouttxt {
     max-width: 59rem;
     height: fit-content;
@@ -114,9 +129,11 @@ a {
     font-weight: 500;
     font-size: 20px;
 }
-#abouttxt{
-    line-height:2;
+
+#abouttxt {
+    line-height: 2;
 }
+
 #aboutex {
     flex-direction: column;
     margin: 2rem 0 0 2rem;
@@ -142,8 +159,9 @@ a {
     justify-content: center;
     align-content: center;
 }
-#projects{
-        background-image: linear-gradient(to top, white, beige);
+
+#projects {
+    background-image: linear-gradient(to top, white, beige);
 }
 
 #project-cards {
@@ -196,8 +214,9 @@ a {
     display: flex;
     gap: 2rem;
 }
-#contactme{
-        background-image: linear-gradient(to bottom, white, beige);
+
+#contactme {
+    background-image: linear-gradient(to bottom, white, beige);
 }
 
 #contactme-txt {
@@ -215,7 +234,8 @@ a {
 #contactme a {
     font-size: 20px;
 }
-.inactive-btn{
+
+.inactive-btn {
     color: grey;
     border: 2px solid silver;
     border-radius: 1rem;
@@ -223,9 +243,10 @@ a {
     font-weight: 700;
 
 }
-.inactive-btn:hover{
+
+.inactive-btn:hover {
     background-color: silver;
-    color:white;
+    color: white;
 }
 
 @media (max-width:580px) {
